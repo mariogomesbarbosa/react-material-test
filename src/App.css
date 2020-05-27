@@ -14,18 +14,32 @@
 }
 
 .App-header {
-  background-color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(56, 50, 68);
+  color: #6A758B;
+}
+
+.Mui-focused {
+	border-color: pink!important;
+}
+
+.App-header p {
+  margin-bottom: 30px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Text-wraper {
+  margin-bottom: 20px;
+  width: 380px;
 }
 
 @keyframes App-logo-spin {

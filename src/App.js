@@ -1,8 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
-import './App.css';
+import React from 'react'
+import TextField from '@material-ui/core/TextField'
+import TextInput from './Components/TextInput.js'
+import './App.css'
 
 
 function App() {
@@ -12,14 +11,30 @@ function App() {
     <div className="App">
       <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Atendimento de Vistorial Digital
         </p>
-        <TextField id="outlined-basic" label="Segurado" placeholder="Nome e sobrenome do segurado" variant="outlined" />
+        <div className="Text-wraper">
+          <TextInput id="segurado" label="Segurado" placeholder="Nome e sobrenome do segurado" variant="outlined" fullWidth="true" />
+        </div>
+        <div className="Text-wraper">
+          <TextInput id="nome-contato" label="Nome do contato" placeholder="Nome de quem receberá o SMS" variant="outlined" fullWidth="true" />
+        </div>
+        <div className="Text-wraper">
+          <TextInput id="placa" label="Placa" placeholder="Placa do veículo" variant="outlined" fullWidth="true" />
+        </div>
+        <div className="Text-wraper">
+          <TextInput id="sinistro" label="Sinistro" placeholder="Número do sinistro" variant="outlined" fullWidth="true" />
+        </div>
+        <div className="Text-wraper">
+          <TextInput id="celular" label="Número do celular" placeholder="Número do celular" variant="outlined" fullWidth="true" />
+        </div>
+        <div className="Text-wraper">
+          <TextInput id="confirmar-celular" label="Confirmar número do celular" placeholder="Confirme o número do celular" variant="outlined" fullWidth="true" />
+        </div>
       </header>
     </div>
-  );
+  )
 }
 
 export default App;
