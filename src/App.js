@@ -1,5 +1,4 @@
 import React from 'react'
-import TextField from '@material-ui/core/TextField'
 import TextInput from './Components/TextInput.js'
 import './App.css'
 
@@ -15,22 +14,59 @@ function App() {
           Atendimento de Vistorial Digital
         </p>
         <div className="Text-wraper">
-          <TextInput id="segurado" label="Segurado" placeholder="Nome e sobrenome do segurado" variant="outlined" fullWidth="true" />
+          <TextInput 
+            id="segurado" 
+            label="Segurado" 
+            placeholder="Nome e sobrenome do segurado" 
+            variant="outlined" 
+            fullWidth="true" 
+          />
         </div>
         <div className="Text-wraper">
-          <TextInput id="nome-contato" label="Nome do contato" placeholder="Nome de quem receberá o SMS" variant="outlined" fullWidth="true" />
+          <TextInput 
+            id="nome-contato" 
+            label="Nome do contato" 
+            placeholder="Nome de quem receberá o SMS" 
+            variant="outlined" 
+            fullWidth="true" 
+          />
         </div>
         <div className="Text-wraper">
-          <TextInput id="placa" label="Placa" placeholder="Placa do veículo" variant="outlined" fullWidth="true" />
+          <TextInput 
+            id="placa" 
+            label="Placa" 
+            placeholder="Placa do veículo" 
+            variant="outlined" 
+            fullWidth="true" 
+          />
         </div>
         <div className="Text-wraper">
-          <TextInput id="sinistro" label="Sinistro" placeholder="Número do sinistro" variant="outlined" fullWidth="true" />
+          <TextInput 
+            id="sinistro" 
+            label="Sinistro" 
+            placeholder="Número do sinistro" 
+            variant="outlined" 
+            fullWidth="true" 
+          />
+        </div>
+
+        <div className="Text-wraper">
+          <TextInput 
+            id="celular" 
+            label="Número do celular" 
+            placeholder="Número do celular" 
+            variant="outlined" 
+            fullWidth="true" 
+          />
         </div>
         <div className="Text-wraper">
-          <TextInput id="celular" label="Número do celular" placeholder="Número do celular" variant="outlined" fullWidth="true" />
-        </div>
-        <div className="Text-wraper">
-          <TextInput id="confirmar-celular" label="Confirmar número do celular" placeholder="Confirme o número do celular" variant="outlined" fullWidth="true" />
+          <TextInput 
+            id="confirmar-celular" 
+            label="Confirmar número do celular" 
+            placeholder="Confirme o número do celular" 
+            variant="outlined" 
+            fullWidth="true" 
+          />
         </div>
       </header>
     </div>
